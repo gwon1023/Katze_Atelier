@@ -4,6 +4,7 @@ export type Critique = {
   id: string;
   title: string;
   medium: string;
+  dreamType: string;
   moodTags: string[];
   summary: string;
   theme: CritiqueTheme;
@@ -20,6 +21,7 @@ export const critiqueData: Critique[] = [
     id: 'blue-room',
     title: '푸른 방의 낮은 숨',
     medium: '단편 영화',
+    dreamType: '정적 몽환',
     moodTags: ['정적', '몽환', '잔광'],
     summary: '말보다 침묵이 먼저 구조를 만드는 실내극에 대한 기록.',
     theme: 'midnight',
@@ -40,6 +42,7 @@ export const critiqueData: Critique[] = [
     id: 'paper-orbit',
     title: '종이 궤도의 독백',
     medium: '그래픽 노블',
+    dreamType: '서간적 우주 몽환',
     moodTags: ['쓸쓸함', '서간체', '우주'],
     summary: '낡은 종이와 행성 이미지가 기억의 궤도를 만드는 방식.',
     theme: 'paper',
@@ -60,6 +63,7 @@ export const critiqueData: Critique[] = [
     id: 'glass-garden',
     title: '유리 정원 관찰기',
     medium: '설치 미술',
+    dreamType: '반사적 몽환',
     moodTags: ['차가움', '반사', '식물성'],
     summary: '투명한 표면이 감상자의 위치를 비평의 일부로 끌어들이는 방식.',
     theme: 'fog',
@@ -80,6 +84,7 @@ export const critiqueData: Critique[] = [
     id: 'warm-static',
     title: '따뜻한 잡음의 기록',
     medium: '사운드 아트',
+    dreamType: '청각적 회상 몽환',
     moodTags: ['저주파', '회상', '불빛'],
     summary: '노이즈가 결핍이 아니라 기억의 질감으로 작동하는 사례.',
     theme: 'ember',
